@@ -37,8 +37,8 @@ public class ctrlEnfermeros implements MouseListener, KeyListener{
         if(e.getSource() == vista.btnIngresar){
             modelo.setNombre_Enfermero(vista.txtNombre.getText());
             modelo.setEdad_Enfermero(Integer.parseInt(vista.txtEdad.getText()));
-            modelo.setPeso_Enfermero(Double.parseDouble(vista.txtEdad.getText()));
-            modelo.setCorreo_Enfermero(vista.txtEdad.getText());
+            modelo.setPeso_Enfermero(Double.parseDouble(vista.txtPeso.getText()));
+            modelo.setCorreo_Enfermero(vista.txtCorreo.getText());
             
             modelo.Guardar();
             modelo.Mostrar(vista.jtbEnfermeros);
